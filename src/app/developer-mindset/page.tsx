@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-// Add ArrowRight to the import statement
 import { ArrowLeft, ArrowRight } from 'lucide-react'; 
 
 export default function DeveloperMindsetPage() {
@@ -34,10 +33,10 @@ export default function DeveloperMindsetPage() {
             className="p-6 bg-white/10 rounded-lg shadow-inner"
           >
             <h2 className="text-2xl font-semibold mb-3 text-white/90">
-              1. What's the most exciting tool/stack you’ve explored recently?
+              1. What&apos;s the most exciting tool/stack you&rsquo;ve explored recently?
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              The most exciting thing I've looked into recently is **`shadcn/ui`**. It's not a regular UI library, but more like a collection of ready-to-use components for React. What's cool is that you get the actual code for these components, not just a pre-built library. This means you have full control over how they look and work, and you can easily change them using Tailwind CSS. It helps build nice-looking UIs very fast, but still lets you customize everything perfectly.
+              The most exciting thing I&apos;ve looked into recently is **`shadcn/ui`**. It&apos;s not a regular UI library, but more like a collection of ready-to-use components for React. What&apos;s cool is that you get the actual code for these components, not just a pre-built library. This means you have full control over how they look and work, and you can easily change them using Tailwind CSS. It helps build nice-looking UIs very fast, but still lets you customize everything perfectly.
             </p>
           </motion.section>
 
@@ -60,7 +59,7 @@ export default function DeveloperMindsetPage() {
                   **Make it Happen Again:** I try to make the bug appear consistently. If it only happens sometimes, I look for what might be causing it.
                 </li>
                 <li>
-                  **Break it Down:** I divide the problem into smaller parts. Is it the front end or the back end? Is it an API call or something visual? I use `console.log` a lot to see what's happening at different stages of the code.
+                  **Break it Down:** I divide the problem into smaller parts. Is it the front end or the back end? Is it an API call or something visual? I use `console.log` a lot to see what&apos;s happening at different stages of the code.
                 </li>
                 <li>
                   **Isolate the Issue:** I try to find the exact part of the code causing the problem. Sometimes I remove other parts of the code temporarily to do this.
@@ -72,10 +71,10 @@ export default function DeveloperMindsetPage() {
                   **Search for Help:** I use Google or Stack Overflow to search for the error message or similar problems.
                 </li>
                 <li>
-                  **Explain it Out Loud:** I find that explaining the problem to myself, or even to an object (like a "rubber duck"), often helps me see the solution clearly.
+                  **Explain it Out Loud:** I find that explaining the problem to myself, or even to an object (like a &quot;rubber duck&quot;), often helps me see the solution clearly.
                 </li>
                 <li>
-                  **Take a Break:** If I'm really stuck and frustrated, I step away for a bit. A short break often helps me come back with a fresh mind and find the answer.
+                  **Take a Break:** If I&apos;m really stuck and frustrated, I step away for a bit. A short break often helps me come back with a fresh mind and find the answer.
                 </li>
               </ol>
             </p>
@@ -88,10 +87,10 @@ export default function DeveloperMindsetPage() {
             className="p-6 bg-white/10 rounded-lg shadow-inner"
           >
             <h2 className="text-2xl font-semibold mb-3 text-white/90">
-              3. Share a link to one past project (GitHub/CodeSandbox/etc) you’re proud of (if any).
+              3. Share a link to one past project (GitHub/CodeSandbox/etc) you&rsquo;re proud of (if any).
             </h2>
             <p className="text-gray-300">
-              I'm proud of a small web application I built for managing personal tasks. It was built using Next.js and a simple JSON server.
+              I&apos;m proud of a small web application I built for managing personal tasks. It was built using Next.js and a simple JSON server.
               <br />
               {/* IMPORTANT: REPLACE THE LINK BELOW WITH YOUR ACTUAL PROJECT LINK */}
               <Link href="https://github.com/YourUsername/YourAwesomeProject" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline inline-flex items-center mt-2">

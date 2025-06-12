@@ -64,7 +64,7 @@ export default function ChatPage() {
         }
 
         const reader = response.body?.getReader();
-        let aiMessage = { role: 'assistant', content: '' };
+         const aiMessage = { role: 'assistant', content: '' };
         // Add a temporary AI message placeholder to the UI
         // We ensure userMessage is there before aiMessage for correct order
         setMessages(prev => {

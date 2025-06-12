@@ -5,13 +5,24 @@ import { useState } from 'react';
 import { listNotes } from '../../../packages/integrations/notion/notesync/notesync.functions';
 import { ListNotesInput } from '../../../packages/integrations/notion/notesync/notesync.schema';
 
+// Define the Note type based on its usage in the component
+interface Note {
+  id: string; // Assuming 'id' is a string from Notion API
+  title: string;
+  status: 'completed' | 'pending'; // Based on your status rendering logic
+  content?: string; // Optional, as you check for note.content &&
+  createdAt: string; // Assuming date strings are returned from API
+  updatedAt: string; // Assuming date strings are returned from API
+}
+
 export default function NoteSyncPage() {
   const [params, setParams] = useState<ListNotesInput>({
     maxResults: 5,
     query: '',
     filter: 'all',
   });
-  const [notes, setNotes] = useState<any[]>([]);
+  // FIX: Changed 'any[]' to 'Note[]'
+  const [notes, setNotes] = useState<Note[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -21,7 +32,8 @@ export default function NoteSyncPage() {
     setError(null);
     
     try {
-      const result = await listNotes(params);
+      // Assuming listNotes returns an object with a 'notes' property which is an array of Note
+      const result: { notes: Note[] } = await listNotes(params); 
       setNotes(result.notes);
     } catch (err) {
       setError('Failed to fetch notes. Please try again.');

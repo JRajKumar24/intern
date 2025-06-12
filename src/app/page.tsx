@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Rocket, ListTodo, BrainCircuit, Notebook, User, ArrowRight, Sparkles } from 'lucide-react';
+// FIX: Removed 'Rocket' from the import list
+import { ListTodo, BrainCircuit, Notebook, User, ArrowRight, Sparkles } from 'lucide-react'; 
 import { useEffect, useState } from 'react'; // Import useEffect and useState
 
 const featureCards = [
