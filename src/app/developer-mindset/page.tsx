@@ -93,7 +93,7 @@ export default function DeveloperMindsetPage() {
               I&apos;m proud of a small web application I built for managing personal tasks. It was built using Next.js and a simple JSON server.
               <br />
               {/* IMPORTANT: REPLACE THE LINK BELOW WITH YOUR ACTUAL PROJECT LINK */}
-              <Link href="https://github.com/YourUsername/YourAwesomeProject" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline inline-flex items-center mt-2">
+              <Link href="https://github.com/JRajKumar24/library-management-system" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline inline-flex items-center mt-2">
                 https://github.com/YourUsername/YourAwesomeProject <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
               <br />
